@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#7fff00"> <!-- Color de barra de navegacion -->
+    <title>Full Stack | Jhon William</title>
+
+    <!--? Estilos CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--? Favicons -->
+    <!-- <link rel="icon" href=""> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png"/>
+    <!--? Animaciones CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--? Iconos Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header class="header">
+        <!--! BARRA DE NAVEGACION -->
+        <nav class="nav">
+            <h1 class="nav-title">Full Stack</h1>
+            <ul class="navigation">
+                <li><a href="#home" class="nav-link">Inicio</a></li>
+                <li><a href="#about-me" class="nav-link">Acerca de mi</a></li>
+                <li><a href="#project" class="nav-link">Proyectos</a></li>
+                <li><a href="#contact" class="nav-link">Contacto</a></li>
+            </ul>
+            
+            <!--* Menu para solo dispositivo movil -->
+            <button class="menu-mobile" id="menu-mobile">
+                <i class='bx bx-menu'></i>
+                <!-- <ion-ico class="bars" name="menu-outline"></ion-ico> -->
+            </button>
+        </nav>
+    </header>
+    <main class="main">
+        <!--! SECCION HERO IMAGE -->
+        <section class="hero" id="home">
+            <img src="assets/images/Banner-FullStack.png" alt="imagen" loading="lazy" class="hero-img">       
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">Full-Stack Developer</h2>
+                <!-- <h2 class="bio-title" id="text-container">Full-Stack</h2> -->
+                <!-- <p class="bio-text">¡Hola! Soy un desarrollador Full-Stack. Aprendiendo más y más sobre este enorme universo, ¡el desarrollo web! ¡Podemos construir sitios web impresionantes, aplicaciones y más juntos!</p> -->
+                <p class="bio-text" id="paragraph-container"></p>
+            </div>
+        </section>
+
+        <!--! SECCION SOBRE MI -->
+        <section class="about-me" id="about-me">
+            <h2 class="about-me-title">Sobre Mí</h2>
+            <br>
+            <p class="about-me-description">
+                Mi nombre es Jhon William Diaz Parra soy Colombia de la ciudad Santiago de Cali.
+                <br><br>
+                Soy una persona autodidacta, apasionada por aprender cosas nuevas 📚. Por un lado, me destaco por programar en lenguajes como JavaScript y Python. Además cuento con conocimientos en Front-End y Back-End ⚙️ en HTML, CSS y más. Los frameworks en los que principalmente me enfoco para realizar soluciones informáticas son React. En un futuro quiero llegar a dominar Go, Java y me gustaría trabajar para una empresa que valore mis habilidades y pueda seguir enriqueciendo mi conocimiento.
+                <!-- <br><br>
+                Actualmente estoy trabajando para "SQL_SES", esta empresa brinda software de salud 🔍. Me encuentro desempeñando el cargo de implementador y desarrollador de software Full Stack🚀 para el servicio del "Núcleo de Ingeniería", el cual asocia todos los proyectos de la entidad. En resumen, es un equipo de desarrollo especializado en dar apoyo a todos los proyectos de la compañía para dar cumpliento con tiempos de entrega urgentes. Todo esto, siguiendo la metodología DevOps para lograr una mayor organización en el equipo de trabajo 🛠. -->
+            </p>
+            <br>
+            <h3 class="about-me-sub-title">Mis Habilidades</h3>
+            <br>
+            <p class="about-me-description">
+                Me destaco por ser una persona autodidacta, aprendo rápido y sé manejar situaciones bajo presión. Por otro lado, no paro hasta lograr mis objetivos y siempre quiero sobresalir en todo lo que hago.
+                <br><br>
+                Cuento con conocimientos en las siguientes tecnologías y lenguajes de programación que utilizo comúnmente para la elaboración de soluciones:
+                <br><br>
+                Tengo un buen dominio y uso de las siguientes tecnologías para la creación de páginas web.
+            </p>
+            <!-- <br>
+            <p class="about-me-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente natus laudantium suscipit, consequatur beatae alias quo. Fugit nobis aut quaerat soluta maiores porro quae suscipit, necessitatibus possimus libero delectus?
+            </p>
+            <br>
+            <p class="about-me-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente natus laudantium suscipit, consequatur beatae alias quo. Fugit nobis aut quaerat soluta maiores porro quae suscipit, necessitatibus possimus libero delectus? -->
+            </p>
+        </section>
+
+        <!-- Habilidades de programacion  -->
+        <section class="skills" id="skills">
+            <h2 class="my-skills">Mis mejores Habilidades</h2>
+            <div class="container-skills">
+                <div class="first-set animate__animated animated__pulse">
+                    <img src="assets/images/icons-skills/HTML.png" alt="icono de html" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/CSS.png" alt="icono de css" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/JavaScript.png" alt="icono de javascript" loading="lazy" class="img-icon icon icon-card">
+                </div>
+                <div class="second-set animate__animated animate__pulse">
+                    <img src="assets/images/icons-skills/React.png" alt="icono de react" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/API.png" alt="icono de api" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/Tailwind.png" alt="icono de tailwind css" loading="lazy" class="img-icon icon icon-card">
+                </div>
+                <div class="third-set animate__animated animate__pulse">
+                    <img src="assets/images/icons-skills/NodeJS.png" alt="icono de node js" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/ExpressJS.png" alt="icono de expressjs" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/NestJS.png" alt="icono de nestjs" loading="lazy" class="img-icon icon icon-card">    
+                </div>
+                <div class="fourth-set animate__animated animate__pulse">
+                    <img src="assets/images/icons-skills/DataBase.png" alt="icono de base de datos" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/Docker.png" alt="icono de docker" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/postgreSQL.png" alt="icono de postgres" loading="lazy" class="img-icon icon icon-card">
+                </div>
+                <div class="fifth-set animate__animated animate__pulse">
+                    <img src="assets/images/icons-skills/MySQL.png" alt="icono de mysql" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/Git.png" alt="icono de git" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/GitHub.png" alt="icono de github" loading="lazy" class="img-icon icon icon-card">
+                </div>
+                <div class="sixth-set animate__animated animate__pulse">
+                    <img src="assets/images/icons-skills/JSON.png" alt="icono de json" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/FireBase.png" alt="icono de firebase" loading="lazy" class="img-icon icon icon-card">
+                    <img src="assets/images/icons-skills/TablePlus.png" alt="icono de table plus" loading="lazy" class="img-icon icon icon-card">  
+                </div>
+            </div>
+        </section>
+
+        <!--! SECCION PROYECTOS -->
+        <section class="project" id="project">
+            <h2 class="project-title">Mis Proyectos</h2>
+
+            <!-- Tarjetas sobre proyectos -->
+            <div class="container-projects">
+                <div class="container-project card-project">
+                    <img src="assets/images/project/blog-web-site.jpg" alt="Blog sobre desarrollo web" loading="lazy" class="img-project project-pic">
+                    <h3 class="project-sub-title">Blog Web Site</h3>
+                    <p class="description-project">Blog informativo sobre el desarrollo de paginas web.</p>
+                    <a href="#" target="_blank" class="link-project">Website</a>
+                    <a href="#" target="_blank" class="link-project">Github</a>
+                </div>
+                <div class="container-project card-project">
+                    <img src="assets/images/project/carrito-de-compras.jpg" alt="Carritos de compras, camisetas" loading="lazy" class="img-project project-pic">
+                    <h3 class="project-sub-title">Carrito de compras</h3>
+                    <p class="description-project">Website sobre ventas de camisetas.</p>
+                    <a href="#" target="_blank" class="link-project">Website</a>
+                    <a href="#" target="_blank" class="link-project">Github</a>
+                </div>
+                <div class="container-project card-project">
+                    <img src="assets/images/project/clima.jpg" alt="Aplicacion sobre el clima en las ciudades" loading="lazy" class="img-project project-pic">
+                    <h3 class="project-sub-title">App Clima</h3>
+                    <p class="description-project">Aplicacion sobre el clima en las ciudades del mundo.</p>
+                    <a href="#" target="_blank" class="link-project">Website</a>
+                    <a href="#" target="_blank" class="link-project">Github</a>
+                </div>
+                <!-- <div class="container-project card-project">
+                    <img src="assets/images/project/crear-usuarios.jpg" alt="Aplicacion sobre crear usuarios" loading="lazy" class="img-project project-pic">
+                    <h3 class="project-sub-title">App Crear Usuarios</h3>
+                    <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" target="_blank" class="link-project">Website</a>
+                    <a href="#" target="_blank" class="link-project">Github</a>
+                </div>
+                <div class="container-project card-project">
+                    <img src="assets/images/project/galletas-de-la-fortuna.jpg" alt="Aplicacion sobre galletas de la fortuna" loading="lazy" class="img-project project-pic">
+                    <h3 class="project-sub-title">App Galletas de la Fortuna</h3>
+                    <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" target="_blank" class="link-project">Website</a>
+                    <a href="#" target="_blank" class="link-project">Github</a>
+                </div>
+                <div class="container-project card-project">
+                    <img src="assets/images/project/rick-and-morty.jpg" alt="Aplicacion sobre imagenes de rick and morty" loading="lazy" class="img-project project-pic">
+                    <h3 class="project-sub-title">App Rick and Morty</h3>
+                    <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" target="_blank" class="link-project">Website</a>
+                    <a href="#" target="_blank" class="link-project">Github</a>
+                </div>
+                <div class="container-project card-project">
+                    <img src="assets/images/project/pokedex.jpg" alt="Aplicacion sobre tarjetas de pokemos" loading="lazy" class="img-project project-pic">
+                    <h3 class="project-sub-title">App Pokedex</h3>
+                    <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" target="_blank" class="link-project">Website</a>
+                    <a href="#" target="_blank" class="link-project">Github</a>
+                </div> -->
+            </div>
+        </section>
+
+        <!--! SECCION CONTACTO-->
+        <section class="contact" id="contact">
+            <h2 class="title-contac">Contactame</h2>
+            <div class="contact-form-conatiner">
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xyylngw" method="post">
+                        <div class="form-control">
+                            <label for="name">Nombre</label>
+                            <input 
+                                type="text"
+                                id="name"
+                                name="sender-name"
+                                placeholder="Escribe tu nombre"
+                                class="input-field"
+                                required
+                            >
+                        </div> 
+                        <div class="form-control">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea 
+                                name="mensaje" 
+                                id="mensaje" 
+                                cols="60" 
+                                rows="10"
+                                placeholder="Escribe tu mensaje"
+                                class="input-field"
+                                required
+                            ></textarea>
+                        </div> 
+                        <input 
+                            type="submit"
+                            value="Enviar"
+                            id="submit-btn"
+                            class="submit-btn"
+                        >     
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Seccion Redes Sociales - fijado a la derecha -->
+        <div class="social">
+            <a href="#" target="_blank">
+                <img 
+                src="assets/images/icons-contact/WhatsApp.png"
+                alt="WhatsApp" 
+                loading="lazy"
+                class="icon-social img-whatsapp">
+            </a>
+            <a href="#" target="_blank">
+                <img 
+                src="assets/images/icons-contact/facebook.png"
+                alt="Facebook" 
+                loading="lazy"
+                class="icon-social img-facebook">
+            </a>
+            <a href="#" target="_blank">
+                <img 
+                src="assets/images/icons-contact/Instagram.png"
+                alt="Instagram" 
+                loading="lazy"
+                class="icon-social img-instagram">
+            </a>
+            <a href="#" target="_blank">
+                <img 
+                src="assets/images/icons-contact/twitter.png"
+                alt="Twitter" 
+                loading="lazy"
+                class="icon-social img-twitter">
+            </a>
+            <a href="#" target="_blank">
+                <img 
+                src="assets/images/icons-contact/LinkedIn.png"
+                alt="LinkedIn" 
+                loading="lazy"
+                class="icon-social img-linkedin">
+            </a>
+            <a href="#" target="_blank">
+                <img 
+                src="assets/images/icons-contact/GitHub.png"
+                alt="GitHub" 
+                loading="lazy"
+                class="icon-social img-github">
+            </a>
+        </div>
+
+        <!--! BOTON DESPLAZAR HACIA ARRIBA -->
+        <i class="scroll-up" id="scroll-up">
+            <img 
+                src="assets/images/icon-displace/Flecha-Hacia-Arriba.png" 
+                alt="Desplazarse hacia arriba" 
+                class="img-icon up-arrow">
+        </i>
+    </main>         
+
+    <!--! SECCION FOOTER  -->
+    <footer class="footer" id="footer">
+        <p class="copy">&copy; Copyright 2023</p>
+        <p class="copy">Built with &#x2661; by 
+            <a href="" target="_blank">Jhon William Diaz Parra</a>
+        </p> 
+    </footer>
+
+    <!--! WEBSITE SCRIPTS -->
+    <script src="assets/js/main.js"></script>
+
+    <!--! ION ICONS SCRIPTS -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>  
+
+</body>
+</html>
+
+
+<!-- imagen de docker, api, javascpri mas grande, cnvertir las imagenes a menos pixeles a 300*300 y bajarle la calidad de la imagen -->
+
