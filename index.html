@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#7fff00"> <!-- Color de barra de navegacion -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico"> 
     <title>Full Stack | Jhon William</title>
 
     <!--? Estilos CSS -->
@@ -18,18 +19,24 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    
     <header class="header">
         <!--! BARRA DE NAVEGACION -->
         <nav class="nav">
-            <h1 class="nav-title">Full Stack</h1>
+            <a href="#" class="logo">
+                <img src="assets/images/logo-full-stack.png" alt="" class="logo-img">
+            </a>
+            <!-- <h1 class="nav-title">Full Stack</h1> -->
             <ul class="navigation">
                 <li><a href="#home" class="nav-link">Inicio</a></li>
                 <li><a href="#about-me" class="nav-link">Acerca de mi</a></li>
                 <li><a href="#project" class="nav-link">Proyectos</a></li>
                 <li><a href="#contact" class="nav-link">Contacto</a></li>
             </ul>
-            
+            <!--* DarkMode - Modo Oscuro -->
+            <label class="switch">
+                <input type="checkbox" id="darkbtn">
+                <span class="slider round"></span>
+            </label>            
             <!--* Menu para solo dispositivo movil -->
             <button class="menu-mobile" id="menu-mobile">
                 <i class='bx bx-menu'></i>
@@ -40,188 +47,395 @@
     <main class="main">
         <!--! SECCION HERO IMAGE -->
         <section class="hero" id="home">
-            <img src="assets/images/Banner-FullStack.png" alt="imagen" loading="lazy" class="hero-img">       
+            <div class="hero-img">
+                <img src="assets/images/Banner-FullStack.png" alt="imagen" loading="lazy" class="hero-img">  
+            </div>
+    
             <div class="bio animate__animated animate__shakeX">
-                <h2 class="bio-title">Full-Stack Developer</h2>
+                <h1 class="bio-title">Full-Stack Developer</h2>
                 <!-- <h2 class="bio-title" id="text-container">Full-Stack</h2> -->
                 <!-- <p class="bio-text">¡Hola! Soy un desarrollador Full-Stack. Aprendiendo más y más sobre este enorme universo, ¡el desarrollo web! ¡Podemos construir sitios web impresionantes, aplicaciones y más juntos!</p> -->
                 <p class="bio-text" id="paragraph-container"></p>
             </div>
+            <div class="area" >
+                <ul class="circles">
+                        <li class="hero-image-li"></li>
+                        <li class="hero-image-li"></li>
+                        <li class="hero-image-li"></li>
+                        <li class="hero-image-li"></li>
+                        <li class="hero-image-li"></li>
+                        <li class="hero-image-li"></li>
+                        <li class="hero-image-li"></li>
+                        <li class="hero-image-li"></li>
+                        <li class="hero-image-li"></li>
+                        <li class="hero-image-li"></li>
+                </ul>
+            </div >             
         </section>
-
         <!--! SECCION SOBRE MI -->
         <section class="about-me" id="about-me">
             <h2 class="about-me-title">Sobre Mí</h2>
-            <br>
-            <p class="about-me-description">
-                Mi nombre es Jhon William Diaz Parra soy Colombia de la ciudad Santiago de Cali.
-                <br><br>
-                Soy una persona autodidacta, apasionada por aprender cosas nuevas 📚. Por un lado, me destaco por programar en lenguajes como JavaScript y Python. Además cuento con conocimientos en Front-End y Back-End ⚙️ en HTML, CSS y más. Los frameworks en los que principalmente me enfoco para realizar soluciones informáticas son React. En un futuro quiero llegar a dominar Go, Java y me gustaría trabajar para una empresa que valore mis habilidades y pueda seguir enriqueciendo mi conocimiento.
-                <!-- <br><br>
-                Actualmente estoy trabajando para "SQL_SES", esta empresa brinda software de salud 🔍. Me encuentro desempeñando el cargo de implementador y desarrollador de software Full Stack🚀 para el servicio del "Núcleo de Ingeniería", el cual asocia todos los proyectos de la entidad. En resumen, es un equipo de desarrollo especializado en dar apoyo a todos los proyectos de la compañía para dar cumpliento con tiempos de entrega urgentes. Todo esto, siguiendo la metodología DevOps para lograr una mayor organización en el equipo de trabajo 🛠. -->
-            </p>
-            <br>
-            <h3 class="about-me-sub-title">Mis Habilidades</h3>
-            <br>
-            <p class="about-me-description">
-                Me destaco por ser una persona autodidacta, aprendo rápido y sé manejar situaciones bajo presión. Por otro lado, no paro hasta lograr mis objetivos y siempre quiero sobresalir en todo lo que hago.
-                <br><br>
-                Cuento con conocimientos en las siguientes tecnologías y lenguajes de programación que utilizo comúnmente para la elaboración de soluciones:
-                <br><br>
-                Tengo un buen dominio y uso de las siguientes tecnologías para la creación de páginas web.
-            </p>
-            <!-- <br>
-            <p class="about-me-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente natus laudantium suscipit, consequatur beatae alias quo. Fugit nobis aut quaerat soluta maiores porro quae suscipit, necessitatibus possimus libero delectus?
-            </p>
-            <br>
-            <p class="about-me-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente natus laudantium suscipit, consequatur beatae alias quo. Fugit nobis aut quaerat soluta maiores porro quae suscipit, necessitatibus possimus libero delectus? -->
-            </p>
-        </section>
-
-        <!-- Habilidades de programacion  -->
-        <section class="skills" id="skills">
-            <h2 class="my-skills">Mis mejores Habilidades</h2>
-            <div class="container-skills">
-                <div class="first-set animate__animated animated__pulse">
-                    <img src="assets/images/icons-skills/HTML.png" alt="icono de html" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/CSS.png" alt="icono de css" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/JavaScript.png" alt="icono de javascript" loading="lazy" class="img-icon icon icon-card">
-                </div>
-                <div class="second-set animate__animated animate__pulse">
-                    <img src="assets/images/icons-skills/React.png" alt="icono de react" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/API.png" alt="icono de api" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/Tailwind.png" alt="icono de tailwind css" loading="lazy" class="img-icon icon icon-card">
-                </div>
-                <div class="third-set animate__animated animate__pulse">
-                    <img src="assets/images/icons-skills/NodeJS.png" alt="icono de node js" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/ExpressJS.png" alt="icono de expressjs" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/NestJS.png" alt="icono de nestjs" loading="lazy" class="img-icon icon icon-card">    
-                </div>
-                <div class="fourth-set animate__animated animate__pulse">
-                    <img src="assets/images/icons-skills/DataBase.png" alt="icono de base de datos" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/Docker.png" alt="icono de docker" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/postgreSQL.png" alt="icono de postgres" loading="lazy" class="img-icon icon icon-card">
-                </div>
-                <div class="fifth-set animate__animated animate__pulse">
-                    <img src="assets/images/icons-skills/MySQL.png" alt="icono de mysql" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/Git.png" alt="icono de git" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/GitHub.png" alt="icono de github" loading="lazy" class="img-icon icon icon-card">
-                </div>
-                <div class="sixth-set animate__animated animate__pulse">
-                    <img src="assets/images/icons-skills/JSON.png" alt="icono de json" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/FireBase.png" alt="icono de firebase" loading="lazy" class="img-icon icon icon-card">
-                    <img src="assets/images/icons-skills/TablePlus.png" alt="icono de table plus" loading="lazy" class="img-icon icon icon-card">  
+            <div class="container-about-me box">
+                <p class="about-me-description">
+                    Mi nombre es Jhon William Diaz Parra soy Colombia de la ciudad Santiago de Cali.<br>
+                    Soy una persona autodidacta, apasionada por aprender cosas nuevas 📚. Por un lado, me destaco por programar en lenguajes como JavaScript y Python. Además cuento con conocimientos en Front-End y Back-End ⚙️ en HTML, CSS y más. Los frameworks en los que principalmente me enfoco para realizar soluciones informáticas son React. En un futuro quiero llegar a dominar Go, Java y me gustaría trabajar para una empresa que valore mis habilidades y pueda seguir enriqueciendo mi conocimiento.
+                    <!-- <br><br>
+                    Actualmente estoy trabajando para "SQL_SES", esta empresa brinda software de salud 🔍. Me encuentro desempeñando el cargo de implementador y desarrollador de software Full Stack🚀 para el servicio del "Núcleo de Ingeniería", el cual asocia todos los proyectos de la entidad. En resumen, es un equipo de desarrollo especializado en dar apoyo a todos los proyectos de la compañía para dar cumpliento con tiempos de entrega urgentes. Todo esto, siguiendo la metodología DevOps para lograr una mayor organización en el equipo de trabajo 🛠. -->
+                </p>
+                <img src="assets/images/about-me.png" alt="Imagen sobre mi" loading="lazy" class="img-about-me">
+            </div>
+                <h3 class="my-skills-title">Mis Habilidades</h3>
+            <div class="container-my-skills">
+                <p class="my-skills-description">
+                    Me destaco por ser una persona autodidacta, aprendo rápido y sé manejar situaciones bajo presión. Por otro lado, no paro hasta lograr mis objetivos y siempre quiero sobresalir en todo lo que hago.
+                    <br>
+                    Cuento con conocimientos en las siguientes tecnologías y lenguajes de programación que utilizo comúnmente para la elaboración de soluciones:
+                    <br>
+                    Tengo un buen dominio y uso de las siguientes tecnologías para la creación de páginas web.
+                </p>
+                <img src="assets/images/skills.jpeg" alt="" class="my-skills-img">               
+            </div>
+            <!--* Habilidades de programacion  -->
+            <div class="skills" id="skills">
+                <h2 class="tittle-card-skills">Mis mejores Habilidades</h2>
+                <div class="container-skills">
+                    <div class="first-set animate__animated animated__pulse">
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/HTML.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">CSS</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/CSS.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">HTML</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/JavaScript.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">JavaScript</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/React.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">React</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/Tailwind.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">Tailwind CSS</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/NodeJS.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">NodeJS</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/ExpressJS.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">ExpressJS</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/NestJS.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">NestJS</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/DataBase.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">Data Base</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/Docker.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">Docker</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/postgreSQL.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">PostgreSQL</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/MySQL.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">MySQL</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/Git.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">Git</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/GitHub.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">GitHub</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/JSON.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">JSON</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/FireBase.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">Fire Base</p>
+                        </div>
+                        <div class="icon-card">
+                            <img src="assets/images/icons-skills/TablePlus.png" alt="icono de html" loading="lazy" class="skills-img">
+                            <p class="skills-description">Table Plus</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
         <!--! SECCION PROYECTOS -->
         <section class="project" id="project">
             <h2 class="project-title">Mis Proyectos</h2>
-
-            <!-- Tarjetas sobre proyectos -->
+            <!--* Tarjetas sobre proyectos -->
             <div class="container-projects">
                 <div class="container-project card-project">
                     <img src="assets/images/project/blog-web-site.jpg" alt="Blog sobre desarrollo web" loading="lazy" class="img-project project-pic">
                     <h3 class="project-sub-title">Blog Web Site</h3>
-                    <p class="description-project">Blog informativo sobre el desarrollo de paginas web.</p>
-                    <a href="#" target="_blank" class="link-project">Website</a>
-                    <a href="#" target="_blank" class="link-project">Github</a>
+                    <p class="description-project">Blog desarrollado con HTML y CSS, el cual contiene un contenido informativo sobre el desarrollo web para aquellas personas que quieren tener conocimientos sobre los conceptos del desarrollo web.</p>
+                    <a href="https://blog-website-124474.netlify.app/" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Website</span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/jhonwid/blog-website" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">GitHub</span>
+                        </button>
+                    </a>
                 </div>
                 <div class="container-project card-project">
                     <img src="assets/images/project/carrito-de-compras.jpg" alt="Carritos de compras, camisetas" loading="lazy" class="img-project project-pic">
                     <h3 class="project-sub-title">Carrito de compras</h3>
-                    <p class="description-project">Website sobre ventas de camisetas.</p>
-                    <a href="#" target="_blank" class="link-project">Website</a>
-                    <a href="#" target="_blank" class="link-project">Github</a>
+                    <p class="description-project">Aplicación web de E-Commerce, desarrollado con HTML, CSS y JavaScript, el cual permite a las personas comprar productos a través de internet en lugar de hacerlo en una ubicación física.</p>
+                    <a href="https://carrito-compras-academlo-jhon-wi.netlify.app/ " target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Website</span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/jhonwid/carrito-compra" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">GitHub</span>
+                        </button>
+                    </a>
                 </div>
                 <div class="container-project card-project">
-                    <img src="assets/images/project/clima.jpg" alt="Aplicacion sobre el clima en las ciudades" loading="lazy" class="img-project project-pic">
+                    <img src="assets/images/project/app-clima-ciudades.jpg" alt="Aplicacion sobre el clima en las ciudades" loading="lazy" class="img-project project-pic">
                     <h3 class="project-sub-title">App Clima</h3>
-                    <p class="description-project">Aplicacion sobre el clima en las ciudades del mundo.</p>
-                    <a href="#" target="_blank" class="link-project">Website</a>
-                    <a href="#" target="_blank" class="link-project">Github</a>
+                    <p class="description-project">Aplicación web de clima, desarrollado con React, JavaScript, HTML, Tailwind CSS, el cual nos permite tener información sobre el estado del clima como la temperatura, lluvia, nieve y viento.</p>
+                    <a href="https://entregable-2-2023-30.netlify.app/ " target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Website</span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/jhonwid/entregable_2" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">GitHub</span>
+                        </button>
+                    </a>
                 </div>
-                <!-- <div class="container-project card-project">
+                <div class="container-project card-project">
                     <img src="assets/images/project/crear-usuarios.jpg" alt="Aplicacion sobre crear usuarios" loading="lazy" class="img-project project-pic">
                     <h3 class="project-sub-title">App Crear Usuarios</h3>
-                    <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" target="_blank" class="link-project">Website</a>
-                    <a href="#" target="_blank" class="link-project">Github</a>
+                    <p class="description-project">Aplicación web de creación de usuario, desarrollado con React, HTML y Tailwind CSS, el cual nos permite crear usuarios para personas que necisitan tener un regristro.</p>
+                    <a href="https://entregable-4-2023-06-22.netlify.app/" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Website</span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/jhonwid/entregable-4" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">GitHub</span>
+                        </button>
+                    </a>
                 </div>
                 <div class="container-project card-project">
-                    <img src="assets/images/project/galletas-de-la-fortuna.jpg" alt="Aplicacion sobre galletas de la fortuna" loading="lazy" class="img-project project-pic">
+                    <img src="assets/images/project/app-galletas-de-la-suerte.png" alt="Aplicacion sobre galletas de la fortuna" loading="lazy" class="img-project project-pic">
                     <h3 class="project-sub-title">App Galletas de la Fortuna</h3>
-                    <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" target="_blank" class="link-project">Website</a>
-                    <a href="#" target="_blank" class="link-project">Github</a>
+                    <p class="description-project">Aplicación web de galletas de la fortuna, desarrollada con React, JavaScript, HTML y Tailwind CSS, el cual contiene mensajes que hace referencia al futuro, azar o el destino.</p>
+                    <a href="https://entregable-1-2023.netlify.app/" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Website</span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/jhonwid/entregable_1" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">GitHub</span>
+                        </button>
+                    </a>
                 </div>
                 <div class="container-project card-project">
-                    <img src="assets/images/project/rick-and-morty.jpg" alt="Aplicacion sobre imagenes de rick and morty" loading="lazy" class="img-project project-pic">
+                    <img src="assets/images/project/app-rick-and-morty.jpg" alt="Aplicacion sobre imagenes de rick and morty" loading="lazy" class="img-project project-pic">
                     <h3 class="project-sub-title">App Rick and Morty</h3>
-                    <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" target="_blank" class="link-project">Website</a>
-                    <a href="#" target="_blank" class="link-project">Github</a>
+                    <p class="description-project">Aplicación web de Rick and Morty, desarrollada con React, JavaScript, HTML y Tailwind CSS, el cual contiene cartas sobre los personas e información sobre su especia, origen y estado.</p>
+                    <a href="https://rick-an-morty-entregable-3-14-06-2023.netlify.app/" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Website</span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/jhonwid/rick-and-morty" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Website</span>
+                        </button>
+                    </a>
                 </div>
                 <div class="container-project card-project">
-                    <img src="assets/images/project/pokedex.jpg" alt="Aplicacion sobre tarjetas de pokemos" loading="lazy" class="img-project project-pic">
+                    <img src="assets/images/project/app-pokede.jpg" alt="Aplicacion sobre tarjetas de pokemos" loading="lazy" class="img-project project-pic">
                     <h3 class="project-sub-title">App Pokedex</h3>
-                    <p class="description-project">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" target="_blank" class="link-project">Website</a>
-                    <a href="#" target="_blank" class="link-project">Github</a>
-                </div> -->
+                    <p class="description-project">Aplicación web de Pokedex, desarrollada con React, JavaScript, HTML y Tailwind CSS, el cual contiene información detallada de cada Pokémon sobre su tipo, fuerza, ataque, defensa y ataque especial.</p>
+                    <a href="https://entregable-5-2023-06.netlify.app/" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">Website</span>
+                        </button>
+                    </a>
+                    <a href="https://github.com/jhonwid/Entregable-5" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">GitHub</span>
+                        </button>
+                    </a>
+                </div> 
+                <div class="container-project card-project">
+                    <img src="assets/images/project/app-motos.jpg" alt="App de agenda de motos para reperaciones" loading="lazy" class="img-project project-pic">
+                    <h3 class="project-sub-title">API Agenda mantenimiento de motos</h3>
+                    <p class="description-project">App backend de Reparación de Motos, desarrollada con NodeJS  y ExpressJS, el cual tiene como función agendar citas para reparar motos, se puede crear citas, modificar citas y eliminar citas.</p>
+                    <!-- <a href="#" target="_blank" class="link-project"><button class="btn-project">Website</button></a> -->
+                    <a href="https://github.com/jhonwid/diary-repais-app" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">GitHub</span>
+                        </button>
+                    </a>
+                </div> 
+                <div class="container-project card-project">
+                    <img src="assets/images/project/app-banco.jpg" alt="app de banco para crear cuentas" loading="lazy" class="img-project project-pic">
+                    <h3 class="project-sub-title">API Banco</h3>
+                    <p class="description-project">App backend de Banco, desarrollada con NodeJS, ExpressJS y JavaScript, el cual tiene como función crear cuentas de bancos con claves aleatorias, hacer transacciones y ver movimientos de saldo.</p>
+                    <!-- <a href="#" target="_blank" class="link-project"><button class="btn-project">Website</button></a> -->
+                    <a href="https://github.com/jhonwid/app-bank" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">GitHub</span>
+                        </button>
+                    </a>
+                </div> 
+                <div class="container-project card-project">
+                    <img src="assets/images/project/app-comidas.png" alt="app para crear restaurantes, solicitud de comidas" loading="lazy" class="img-project project-pic">
+                    <h3 class="project-sub-title">API Comidas de restaurantes</h3>
+                    <p class="description-project">App backend de Banco, desarrollada con NodeJS, ExpressJS y JavaScript, el cual tiene como función crear restaurantes, menú de comidas y ordenes de comidas.</p>
+                    <!-- <a href="#" target="_blank" class="link-project"><button class="btn-project">Website</button></a> -->
+                    <a href="https://github.com/jhonwid/restaurant-academlo" target="_blank" class="link-project">
+                        <button class="btn-project">
+                            <span class="transition"></span>
+                            <span class="gradient"></span>
+                            <span class="label">GitHub</span>
+                        </button>
+                    </a>
+                </div> 
             </div>
         </section>
-
         <!--! SECCION CONTACTO-->
         <section class="contact" id="contact">
             <h2 class="title-contac">Contactame</h2>
-            <div class="contact-form-conatiner">
-                <div class="contact-form">
-                    <form action="https://formspree.io/f/xyylngw" method="post">
-                        <div class="form-control">
-                            <label for="name">Nombre</label>
+            <div class="container-contact">
+                <!--* SECCION INFRMACION -->
+                <div class="contact-info">
+                    <p class="contact-paragraph">Jhon William Diaz Parra</p>
+                    <p class="contact-paragraph">Tel: +57 310 845 2740</p>
+                    <p class="contact-paragraph">Mail:jwdiaz93@gmail.com</p>
+                    <p class="contact-paragraph">Santiago de Cali, Colombia</p>
+                </div>
+                <!--* Enviar Mensaje -->
+                <div class="contact-form-conatiner">
+                    <div class="contact-form">
+                        <form action="https://formspree.io/f/xyylngw" method="post">
+                            <div class="form-control">
+                                <label for="name">Nombre</label>
+                                <input 
+                                    type="text"
+                                    id="name"
+                                    name="sender-name"
+                                    placeholder="Escribe tu nombre"
+                                    class="input-field"
+                                    required
+                                >
+                            </div> 
+                            <div class="form-control">
+                                <label for="mensaje">Mensaje</label>
+                                <textarea 
+                                    name="mensaje" 
+                                    id="mensaje" 
+                                    cols="60" 
+                                    rows="10"
+                                    placeholder="Escribe tu mensaje"
+                                    class="input-field"
+                                    required
+                                ></textarea>
+                            </div> 
                             <input 
-                                type="text"
-                                id="name"
-                                name="sender-name"
-                                placeholder="Escribe tu nombre"
-                                class="input-field"
-                                required
-                            >
-                        </div> 
-                        <div class="form-control">
-                            <label for="mensaje">Mensaje</label>
-                            <textarea 
-                                name="mensaje" 
-                                id="mensaje" 
-                                cols="60" 
-                                rows="10"
-                                placeholder="Escribe tu mensaje"
-                                class="input-field"
-                                required
-                            ></textarea>
-                        </div> 
-                        <input 
-                            type="submit"
-                            value="Enviar"
-                            id="submit-btn"
-                            class="submit-btn"
-                        >     
-                    </form>
+                                type="submit"
+                                value="Enviar"
+                                id="submit-btn"
+                                class="submit-btn"
+                            >     
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
-        <!-- Seccion Redes Sociales - fijado a la derecha -->
+        <!--! PARALLAX -->
+        <section class="parallax">
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path height="1px" fill="currentColor" fill-opacity="1" d="M0,96L60,101.3C120,107,240,117,360,138.7C480,160,600,192,720,202.7C840,213,960,203,1080,186.7C1200,171,1320,149,1380,138.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+            </svg> 
+        </section>
+        <!--! PARALLAX --> 
+        <!--! SECCION REDES SOCIALES - fijado a la derecha -->
         <div class="social">
-            <a href="#" target="_blank">
+            <a href="assets/document/Curriculum.pdf" target="_blank">
+                <img 
+                src="assets/images/icons-contact/cv.png"
+                alt="Curriculum" 
+                loading="lazy"
+                class="icon-social img-curriculum">
+            </a> 
+            <a href="https://api.whatsapp.com/send?phone=573108452740" target="_blank">
                 <img 
                 src="assets/images/icons-contact/WhatsApp.png"
                 alt="WhatsApp" 
                 loading="lazy"
                 class="icon-social img-whatsapp">
+            </a>
+            <a href="https://www.linkedin.com/in/jhondiaz93/" target="_blank">
+                <img 
+                src="assets/images/icons-contact/LinkedIn.png"
+                alt="LinkedIn" 
+                loading="lazy"
+                class="icon-social img-linkedin">
+            </a>
+            <a href="https://github.com/jhonwid" target="_blank">
+                <img 
+                src="assets/images/icons-contact/GitHub.png"
+                alt="GitHub" 
+                loading="lazy"
+                class="icon-social img-github">
             </a>
             <a href="#" target="_blank">
                 <img 
@@ -237,29 +451,14 @@
                 loading="lazy"
                 class="icon-social img-instagram">
             </a>
-            <a href="#" target="_blank">
+            <!-- <a href="#" target="_blank">
                 <img 
                 src="assets/images/icons-contact/twitter.png"
                 alt="Twitter" 
                 loading="lazy"
                 class="icon-social img-twitter">
-            </a>
-            <a href="#" target="_blank">
-                <img 
-                src="assets/images/icons-contact/LinkedIn.png"
-                alt="LinkedIn" 
-                loading="lazy"
-                class="icon-social img-linkedin">
-            </a>
-            <a href="#" target="_blank">
-                <img 
-                src="assets/images/icons-contact/GitHub.png"
-                alt="GitHub" 
-                loading="lazy"
-                class="icon-social img-github">
-            </a>
+            </a>  -->
         </div>
-
         <!--! BOTON DESPLAZAR HACIA ARRIBA -->
         <i class="scroll-up" id="scroll-up">
             <img 
@@ -267,18 +466,23 @@
                 alt="Desplazarse hacia arriba" 
                 class="img-icon up-arrow">
         </i>
-    </main>         
-
+        <!--! SECCION CONTACTO-->
+    </main>        
     <!--! SECCION FOOTER  -->
     <footer class="footer" id="footer">
-        <p class="copy">&copy; Copyright 2023</p>
-        <p class="copy">Built with &#x2661; by 
-            <a href="" target="_blank">Jhon William Diaz Parra</a>
-        </p> 
+        <!--? SECCION DERECHOS DE AUTOR -->
+        <div class="contact-copyright">
+            <p class="copy">POLITICA DE PRIVACIDAD | TERMINOS DE USO SUS DERECHOS DE PRIVACIDAD EN COLOMBIA | POLITICA DE PRIVACIDAD EN LIENA PARA NIÑOS ANUNCIOS BASADOS EN INTERESES | NO VENDAS MI INFORMACION</p>
+            <br>
+            <p class="copy">&copy; Copyright 2023 Built with by 
+                <a href="" target="_blank">Jhon William Diaz Parra</a>
+            </p> 
+        </div>
     </footer>
 
     <!--! WEBSITE SCRIPTS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/bannerBackgroundtwo.js"></script>
 
     <!--! ION ICONS SCRIPTS -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 

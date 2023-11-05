@@ -11,6 +11,7 @@ desplazarArriba.addEventListener("click", () => {
     });
 });
 
+
 //* |||||||||||||||||||||||||||||||||||| *//
 //* SELECCIONES PARA BARRA DE NAVEGACION *//
 //* |||||||||||||||||||||||||||||||||||| *//
@@ -21,6 +22,7 @@ const nav = document.querySelector("nav");
 men.addEventListener("click", () => {
     ul.classList.toggle("show");
 });
+
 
 //* ||||||||||||||||||||||||||||||||||||||||||||||||| *//
 //* CERRAR EL MENU CUANDO SE HACE CLICK EN UN ENLACE *//
@@ -33,6 +35,8 @@ navLink.forEach((link) =>
         ul.classList.remove("show");
     })
 );
+
+
 //* |||||||||||||||||||||||||||| *//
 //* EFECTO TITULO DE HERO IMAGE *//
 //* |||||||||||||||||||||||||||| *//
@@ -50,6 +54,7 @@ var _INTERVAL_VAL;
 var _ELEMENT = document.querySelector("#paragraph-container");
 // Elemento de cursor
 var _CURSOR = document.querySelector("#cursor");
+
 // Implementa el efecto de escritura
 function Type() {
     // Obtener una subcadena con 1 carácter añadido
@@ -95,6 +100,46 @@ function Delete() {
 // Iniciar el efecto de escritura al cargar
 _INTERVAL_VAL = setInterval(Type, 150);
 
+
 //* |||||||||||||||||||||||||||| *//
-//*                              *//
+//*          MODO OSCURO         *//
 //* |||||||||||||||||||||||||||| *//
+const darkbtn = document.getElementById('darkbtn');
+const body = document.body;
+const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+
+if (isDarkMode) {
+    body.classList.add('dark-mode');
+    darkbtn.checked = true;
+}
+darkbtn.addEventListener('change', () => {
+    if (darkbtn.checked) {
+        body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'enabled');
+    } else {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'disabled');
+    }
+});
+
+
+//* |||||||||||||||||||||||||||| *//
+//*       SCROLL ANIMATION       *//
+//* |||||||||||||||||||||||||||| *//
+const boxes = document.querySelectorall(".box");
+
+const checkBoxes = () => {
+    const triggerBottom = (window.innerHeight / 5) * 4;
+    boxes.forEach((box) => {
+        const boxTop = box.getBoundingClientReact().top;
+
+        if (boxTop < triggerBottom) box.classList.add("show");
+
+        else box.classList.remove("show");
+    });
+};
+
+window.addEventListener("scroll", checkBoxes);
+checkBoxes();
+
+
