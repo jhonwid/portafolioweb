@@ -515,8 +515,24 @@ input:checked+.slider:before {
     margin-bottom: 1rem;
 }
 
-.container-skills .img {
+.container-skills .link-about-me{
     padding: 1.25rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-about-me{
+    width: 100px;    
+    height: 25px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn-about-me:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
 }
 /** Habilidades **/
 
@@ -812,7 +828,7 @@ input:checked+.slider:before {
 .icon-social:hover {
     /* width: 2.5rem;
     height: 2.5rem; */
-    transform: scale(0.7);
+    transform: scale(0.8);
     transition: 0.5s;
 }
 
